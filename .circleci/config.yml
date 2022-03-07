@@ -14,7 +14,7 @@ commands:
 jobs:
   python38-quality:
     docker:
-      - image: circleci/python:3.8
+      - image: cimg/python:3.8
     steps:
       - checkout
       - restore_cache:
@@ -32,7 +32,7 @@ jobs:
 
   python38:
     docker:
-      - image: circleci/python:3.8
+      - image: cimg/python:3.8
     steps:
       - checkout
       - restore_cache:
@@ -50,7 +50,7 @@ jobs:
 
   pii_check:
     docker:
-      - image: circleci/python:3.8
+      - image: cimg/python:3.8
     steps:
       - checkout
       - restore_cache:
