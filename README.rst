@@ -37,7 +37,10 @@ you can use `EDXAPP_PRIVATE_REQUIREMENTS <https://github.com/openedx/configurati
 
 
 
-No other configuration needed to run the app
+Usage
+-----
+
+**No other configuration needed to run the app**
 
 All actions in this app is triggered by the ``post_save`` signal from ``UserRetirementStatus`` table
 
