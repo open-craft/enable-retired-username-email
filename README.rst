@@ -44,7 +44,8 @@ All actions in this app is triggered by the ``post_save`` signal from ``UserReti
 
 Just setup the retirement states in one of two ways:
 
-1. Using `EDXAPP_RETIREMENT_STATES <https://github.com/openedx/configuration/blob/f676c356a5424a52ebff01da7a8a7d96189f2579/playbooks/roles/edxapp/defaults/main.yml#L857>`_ ansbile variable ::
+1. Using `EDXAPP_RETIREMENT_STATES <https://github.com/openedx/configuration/blob/f676c356a5424a52ebff01da7a8a7d96189f2579/playbooks/roles/edxapp/defaults/main.yml#L857>`_ ansbile variable
+::
     EDXAPP_RETIREMENT_STATES:
         - PENDING
         - RETIRING_ENROLLMENTS
