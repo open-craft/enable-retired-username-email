@@ -18,13 +18,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: python3.8
+          keys: python3.8.x
       - requirements
       - run:
           name: Run code quality checks
           command: . venv/bin/activate && tox -e quality
       - save_cache:
-          key: python3.8
+          key: python3.8.x
           paths:
             - .tox
             - venv
@@ -36,13 +36,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: python3.8
+          keys: python3.8.x
       - requirements
       - run:
           name: Run tests using Python 3.8
           command: . venv/bin/activate && tox -e "py{38}-django{22}"
       - save_cache:
-          key: python3.8
+          key: python3.8.x
           paths:
             - .tox
             - venv
@@ -54,13 +54,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: python3.8
+          keys: python3.8.x
       - requirements
       - run:
           name: Run PII checks
           command: . venv/bin/activate && tox -e pii_check
       - save_cache:
-          key: python3.8
+          key: python3.8.x
           paths:
             - .tox
             - venv
