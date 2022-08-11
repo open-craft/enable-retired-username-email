@@ -69,7 +69,9 @@ setup(
     url='https://github.com/open-craft/enable-retired-username-email',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=load_requirements('requirements/base.in'),
+    install_requires=[
+        'Django',
+    ],
     license="AGPL 3.0",
     zip_safe=False,
     keywords='Django edx',
